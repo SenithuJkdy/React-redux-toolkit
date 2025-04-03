@@ -12,7 +12,7 @@ export type RootState = ReturnType<typeof store.getState>
 export type AppDispatch = typeof store.dispatch
 
 // Writing these here to prevent defining the type in every file
-export const useAppDispatch = ()=> useDispatch<AppDispatch>() // This is use to perform action
+export const useAppDispatch = ()=> useDispatch<AppDispatch>() // This is use to perform action instead of useDispatch()
 export const useTypedSelector: TypedUseSelectorHook<RootState> = useSelector
 // Used to get the data from the store in the component
 

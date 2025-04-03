@@ -18,13 +18,16 @@ const IncDecSlice = createSlice({
             state.currentNumber += 1;
         },
         decrementNumber: (state) => {
-            state.currentNumber -= 1
+            state.currentNumber -= 1;
         },
         incrementUserValue: (state, action) => {
-            state.currentNumber += action.payload
+            state.currentNumber += action.payload;
         },
         decrementUserValue: (state, action) => {
-            state.currentNumber -= action.payload
+            state.currentNumber -= action.payload;
+        },
+        resetValue: (state) =>{
+            state.currentNumber = 0;
         }
     } // action methods
 })
