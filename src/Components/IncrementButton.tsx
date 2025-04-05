@@ -11,7 +11,7 @@ const IncrementButton = ({ value }: {value: number | undefined })=> {
             dispatch(IncDecServices.actions.incrementNumber())
         }
         else{
-            dispatch(IncDecServices.actions.decrementUserValue(value))
+            dispatch(IncDecServices.actions.incrementUserValue(value))
         }
     }
 
